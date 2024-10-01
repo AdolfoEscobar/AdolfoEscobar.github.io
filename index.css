@@ -1,97 +1,149 @@
-* {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Proza+Libre:wght@700&display=swap");
+
+html,body {
+    height: 100%;
+    color: var(--font-color);
 }
 
-h1 {
-    text-align: center;
-    padding: 10px;
+:root {
+    --spacing-1: 8px;
+    --spacing-2: 12px;
+    --spacing-3: 16px;
+    --spacing-4: 24px;
+  
+    --border-radius: 12px;
+  
+    --font-color: #323232;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0 var(--spacing-3);
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 
-header {
-    background-color: green;
-    padding: 20px;
-    text-transform: uppercase;
+h2 {
+    font-family: "Proza Libre", sans-serif;
+    margin-bottom: var(--spacing-2);
+}
+
+section {
+    padding: var(--spacing-3) 0;
+}
+
+details {
+    cursor: pointer;
+  
+}
+  
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-3) 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #323232;
     font-weight: bold;
 }
 
-header nav ul li {
-    display: inline-block;
-    margin: 0 15px;
-}
-
-header nav ul {
-    text-align: center;
+.navigation-items {
+    display: flex;
+    list-style-type: none;
     padding: 0;
+    align-items: center;
     margin: 0;
+    margin-left: auto;
 }
+  
+.navigation-item {
+    margin: var(--spacing-1);
+}
+  
 
-header nav ul li a {
-    color: white;
+.universitylink a{
+    color: purple;
     text-decoration: none;
+
 }
 
-header nav ul li a:hover {
-    color: black;
+.about-me-container {
+    display: flex;
 }
 
-main {
-    padding: 20px;
+.about-me-text-container {
+    margin-right: 69px;
 }
 
-main p {
-    text-align: center;
-    padding: 10px;
+.portrait {
+    width: 300px;
+    border-radius: var(--border-radius);
+    flex-shrink: 0;
+}
+  
+summary {
+    list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
+}
+
+.project {
+    padding: 10px 0px;
+}
+
+.project-title h3 {
+    display: inline;
+}
+
+#skills-container {
+    display: flex;
+    justify-content: center;
+}
+
+#skills-container img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    margin: 10px;
+    display: inline;
+}
+
+#contact-container {
+    display: flex;
+}
+
+#contact-container img{
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    margin: 10px;
+    display: inline;
+
 }
 
 footer {
-    background-color: green;
+    margin-top: auto;
+    text-align: center;
     padding: 20px;
-    text-align: center;
 }
 
-footer h2 {
-    color: white;
-    margin: 0;
+.heart {
+    color: red;
+}
+@media only screen and (max-width: 1000px) {
+    .about-me-container {
+      flex-direction: column;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    #skills-container {
+      flex-wrap: wrap;
+      align-items: center;
+    }
 }
 
-footer ul {
-    padding: 0;
-    margin: 10px 0 0;
-}
-
-footer ul li {
-    
-    display: inline-block;
-    margin: 0 69px;
-}
-
-footer ul li a {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-footer ul li a:hover{
-    color: black;
-}
-
-
-table {
-    margin: 0 auto;
-    border-collapse: collapse;
-    width: 75%;
-}
-
-table th, table td {
-    border: 1px solid;
-    padding: 8px;
-    text-align: center;
-}
-
-table th {
-    background-color: #f2f2f2;
-}

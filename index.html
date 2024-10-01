@@ -5,9 +5,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adolfo Escobar</title>
+  <title>Portfolio | Adolfo Escobar</title>
   <link rel="stylesheet" href="./index.css">
-  <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+  <script src="./script.js" defer></script>
 </head>
 
 <body>
@@ -15,9 +16,11 @@
   <header>
 
     <nav>
-      <ul>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+      <h2>Adolfo Escobar Pereyra</h2>
+      <ul class="navigation-items">
+        <li class="navigation-item"><a href="#projects">Projects</a></li>
+        <li class="navigation-item"><a href="#skills">Skills</a></li>
+        <li class="navigation-item"><a href="./contact.html">Contact</a></li>
       </ul>
     </nav>
 
@@ -25,51 +28,74 @@
 
   <main>
 
-    <h1>Hola soy Adolfo Escobar desarrollador Full Stack</h1>
-    <p>Estudiante de la <a href="https://www.uach.mx">Universidad Autonoma de Chihuahua</a> y <a href="https://www.codecademy.com/profiles/adolfoescobar">Codecademy</a></p>
+    <section id="aboutme">
+      <div class="about-me-container">
+        <div class="about-me-text-container">
+          <h2>About Me</h2>
+          <p>Student of <span class="universitylink"><a href="https://www.uach.mx">Universidad Autonoma de Chihuahua</a></span> and <span class="universitylink"><a href="https://www.codecademy.com/profiles/adolfoescobar">Codecademy</a></span></p>
+          <p>
+            Hi! I'm Ada, Countess of Lovelace and am an English mathematician
+            and writer, chiefly known for my work on Charles Babbage's
+            proposed mechanical general-purpose computer, the Analytical
+            Engine.
+          </p>
+          <p>
+            I am one of the first to recognize that machines have applications
+            beyond pure calculation, and to have published the first algorithm
+            intended to be carried out by such a machine.
+          </p>
+          <p>
+            In my free time I like to read about scientific developments,
+            mathematics, and computational mathematics. I also like to take my
+            chances of winning big.
+          </p>
+        </div>
+        <img src="./img/adolfo.jpg" alt="A Photo of Adolfo Escobar" class="portrait">
+      </div>
+    </section>
     
-    <table>
-
-      <thead>
-
-        <th>Tecnologias</th>
-        <th>Descripcion</th>
-
-      </thead>
-
-      <tbody>
-
-        <tr>
-          <td>HTML</td>
-          <td>Hyper Text Markup Languaje</td>
-        </tr>
-        <tr>
-          <td>CSS</td>
-          <td>Cascading Style Sheets</td>
-        </tr>
-        <tr>
-          <td>JS</td>
-          <td>JavaScript</td>
-        </tr>
-
-      </tbody>
-
-      <tfoot>
-
-      </tfoot>
-
-    </table>
+    <section id="projects">
+      <h2>Projects</h2>
+    
+      <details class="project">
+        <summary class="project-title">
+          <h3>Project</h3>
+        </summary>
+        <p class="project-description">
+          Description
+        </p>
+      </details>
+    
+      <details class="project">
+        <summary class="project-title">
+          <h3>Project</h3>
+        </summary>
+        <p class="project-description">
+          Description
+        </p>
+      </details>
+    </section>
+    
+    
+    <section id="skills">
+      <h2>Skills</h2>
+      <div id="skills-container">
+        <img src="./img/html.png" alt="HTML5">
+        <img src="./img/css.png" alt="CSS3">
+        <img src="./img/js.png" alt="JavaScript">
+        <img src="./img/git.png" alt="Git">
+        <img src="./img/terminal.png" alt="Terminal">
+        <img src="./img/npm.png" alt="NPM">
+        <img src="./img/node.png" alt="Node.js">
+        <img src="./img/github.png" alt="GitHub">
+        <img src="./img/gitlab.png" alt="GitLab">
+        <img src="./img/linux.png" alt="Linux">
+      </div>
+    </section>
 
   </main>
 
-  <footer>
-    <h2>Contacto</h2>
-    <ul>
-      <li><a href="https://github.com/AdolfoEscobar">Github</a></li>
-      <li><a href="https://wa.me/526141532530?text=Hola%20quiero%20desarrollar%20una%20aplicacion">Whatsapp</a></li>
-    </ul>
-    
-  </footer>
+  <footer>Made with <span class="heart">♥</span> in Chihuahua, Mexico</footer>
 
 </body>
 
