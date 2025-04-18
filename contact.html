@@ -1,28 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Contact</title>
+        <title>Contacto | Escobar Labs</title>
         <link rel="stylesheet" href="./index.css" />
         <link rel="stylesheet" href="./all.min.css" />
+        <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
       </head>
     <body>
         <nav>
-            <h2>Adolfo Escobar Pereyra</h2>
+            <h2>Escobar Labs</h2>
               <ul class="navigation-items">
-                <li class="navigation-item"><a href="./index.html">Portfolio</a></li>
-            </ul>
+                <li class="navigation-item"><a href="./index.html">Inicio</a></li>
+              </ul>
         </nav>
         <main>
-            <section id="contact">
-            <h2>Contact</h2>
-            <p>Have an interesting project? I would love to hear about it!</p>
-            <div id="contact-container">
-                <a href="https://github.com/AdolfoEscobar"><img src="./img/github.png"></a>
-                <a href="https://wa.me/526141532530?text=Hola%20quiero%20desarrollar%20una%20aplicacion"><img src="./img/wp.png"></a>
-            </div>
+            <section id="contact" class="contact-section">
+                <h2>Contacto</h2>
+                <p class="contact-intro">¿Listo para transformar tu negocio con soluciones tecnológicas innovadoras? ¡Conversemos sobre tu proyecto!</p>
+                
+                <div class="whatsapp-container">
+                    <a href="https://wa.me/526141532530?text=Hola%20estoy%20interesado%20en%20sus%20servicios" class="whatsapp-button">
+                        <img src="./img/wp.png" alt="WhatsApp">
+                        <span>Contáctanos por WhatsApp</span>
+                    </a>
+                    <p class="whatsapp-text">La forma más rápida y directa de comunicarte con nosotros</p>
+                </div>
+                
+                <div class="other-contact-methods">
+                    <h3>También puedes encontrarnos en:</h3>
+                    <div class="contact-methods-grid">
+                        <div class="contact-method">
+                            <div class="method-icon">📍</div>
+                            <p>Chihuahua, México</p>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">✉️</div>
+                            <p>info@escobarlabs.mx</p>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">📱</div>
+                            <p>+52 614 153 2530</p>
+                        </div>
+                        <div class="contact-method">
+                            <a href="https://github.com/AdolfoEscobar" class="github-link">
+                                <img src="./img/github.png" alt="GitHub">
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
+        
+        <footer>
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Escobar Labs</h3>
+                    <p>Chihuahua, México</p>
+                    <p>© <span id="currentYear"></span> Escobar Labs. Todos los derechos reservados.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="./index.html#nosotros">Inicio</a>
+                    <a href="./index.html#habilidades">Tecnologías</a>
+                    <a href="./index.html#servicios">Servicios</a>
+                    <a href="./contact.html">Contacto</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                Hecho con <span class="heart">♥</span> en Chihuahua, México
+            </div>
+        </footer>
+
+        <script>
+            // Actualizar el año automáticamente
+            document.querySelectorAll('#currentYear').forEach(function(element) {
+                element.textContent = new Date().getFullYear();
+            });
+        </script>
     </body>
 </html>
