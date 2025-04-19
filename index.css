@@ -189,7 +189,7 @@ nav ul li a:hover::after {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), 
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), 
                       url(./img/mexico-city.jpg);
     background-size: cover;
     background-position: center;
