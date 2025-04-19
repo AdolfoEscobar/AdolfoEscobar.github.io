@@ -9,6 +9,110 @@
   <link rel="stylesheet" href="./index.css">
   <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
   <script src="./script.js" defer></script>
+  <style>
+    /* Header fijo */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background-color: white;
+    }
+    
+    nav {
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+    
+    /* Añadir padding al cuerpo para compensar el header fijo */
+    body {
+      padding-top: 60px; /* Ajustar según la altura de tu header */
+    }
+    
+    /* Mejoras para la sección hero y el botón de WhatsApp */
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 100%;
+      padding: 0 20px;
+    }
+    
+    .hero-content h1 {
+      text-align: center;
+      word-wrap: break-word;
+      max-width: 100%;
+      font-size: clamp(1.8rem, 5vw, 3.2rem);
+    }
+    
+    .hero-content .tagline {
+      text-align: center;
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+    
+    .hero-whatsapp {
+      margin: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .hero-whatsapp .whatsapp-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: auto;
+      max-width: 90%;
+      min-width: 200px;
+      padding: clamp(8px, 2vw, 15px) clamp(15px, 4vw, 30px);
+      border-radius: 50px;
+      font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+      gap: 10px;
+    }
+    
+    .hero-whatsapp .whatsapp-button img {
+      filter: none;
+      width: clamp(24px, 6vw, 32px);
+      height: clamp(24px, 6vw, 32px);
+      margin-right: 0;
+    }
+    
+    /* Ajustes responsivos adicionales */
+    @media screen and (max-width: 480px) {
+      body {
+        padding-top: 90px; /* Ajuste para navegación en columna en móviles */
+      }
+      
+      .hero-content {
+        padding: 0 15px;
+      }
+      
+      .hero-content h1 br {
+        display: none; /* Quita el salto de línea en pantallas muy pequeñas */
+      }
+      
+      .hero-whatsapp .whatsapp-button {
+        min-width: 180px;
+        padding: 8px 16px;
+      }
+    }
+    
+    @media screen and (max-width: 320px) {
+      .hero-whatsapp .whatsapp-button {
+        min-width: 160px;
+        font-size: 0.8rem;
+      }
+      
+      .hero-whatsapp .whatsapp-button img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -26,8 +130,15 @@
   <main>
     <section id="nosotros" class="hero-section">
       <div class="hero-content">
-        <h1>Soluciones Digitales<br><span class="highlight">Innovadoras y Globales</span></h1>
+        <h1>Soluciones Digitales <span class="highlight">Innovadoras y Globales</span></h1>
         <p class="tagline">Transformamos ideas en soluciones tecnológicas de alto impacto</p>
+        
+        <div class="whatsapp-container hero-whatsapp">
+          <a href="https://wa.me/526141532530?text=Hola%20estoy%20interesado%20en%20sus%20servicios" class="whatsapp-button">
+            <img src="./img/wp.png" alt="WhatsApp">
+            <span>Contáctanos</span>
+          </a>
+        </div>
       </div>
     </section>
     
@@ -98,7 +209,6 @@
         </div>
       </div>
     </section>
-
   </main>
 
   <footer>
